@@ -23,10 +23,10 @@ def consultar_agente(pregunta, historial=""):
     # 4. Traer los 3 trámites más relevantes
     resultados = coleccion.query(
         query_embeddings=[pregunta_embed],
-        n_results=3
+        n_results=5
     )
     
-    # Juntamos los textos de los 3 trámites encontrados
+    # Juntamos los textos de los 5 trámites encontrados
     contexto_recuperado = "\n\n".join(resultados['documents'][0])
     
     # 5. Aplicar el Perfil 3: Empático (Del Manual de Prompts)
