@@ -1,0 +1,11 @@
+# Ignorar el entorno virtual
+venv/
+__pycache__/
+
+# Ignorar llaves secretas
+.env
+.DS_Store
+
+# Archivos de Excel o CSV pesados (la IA ya los leyó y los tiene en la base vectorial)
+*.csv
+*.xlsx
