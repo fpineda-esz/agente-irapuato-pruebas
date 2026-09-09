@@ -20,7 +20,7 @@ def consultar_agente(pregunta, historial=""):
         content=pregunta
     )['embedding']
     
-    # 4. Traer los 3 trámites más relevantes
+    # 4. Traer los 5 trámites más relevantes
     resultados = coleccion.query(
         query_embeddings=[pregunta_embed],
         n_results=5
